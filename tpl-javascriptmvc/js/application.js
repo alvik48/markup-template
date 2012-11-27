@@ -5,9 +5,9 @@
 $(function()
 { 
     $('body').application({
-        P_CSS:      'css/'
-        P_IMAGES:   'images/'
-        P_JS:       'js/'
+        P_CSS:      'css/',
+        P_IMAGES:   'images/',
+        P_JS:       'js/',
         P_PICTURES: 'pictures/'
     }); 
 });
@@ -20,9 +20,9 @@ $.Controller('Application',
 {
     pluginName: 'application',
     defaults: {
-        P_CSS:      'css/'
-        P_IMAGES:   'images/'
-        P_JS:       'js/'
+        P_CSS:      'css/',
+        P_IMAGES:   'images/',
+        P_JS:       'js/',
         P_PICTURES: 'pictures/'
     }
 }, 
