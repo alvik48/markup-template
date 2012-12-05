@@ -2,15 +2,7 @@
     @BOOTSTRAP
 ------------------------------------------------------------------------------------------------- */
 
-$(function()
-{ 
-    $('body').application({
-        P_CSS:      'css/',
-        P_IMAGES:   'images/',
-        P_JS:       'js/',
-        P_PICTURES: 'pictures/'
-    }); 
-});
+$(function() { $('body').application({  }); });
 
 /* -------------------------------------------------------------------------------------------------
     @APPLICATION
@@ -20,64 +12,13 @@ $.Controller('Application',
 {
     pluginName: 'application',
     defaults: {
-        P_CSS:      'css/',
-        P_IMAGES:   'images/',
-        P_JS:       'js/',
-        P_PICTURES: 'pictures/'
+        
     }
 }, 
 {
     init: function () 
     {
-        var self = this;
-
-        /**
-         * Application params
-         */
-        this.test = new Object;
-
-        /**
-         * Bootstrap
-         */
-        this.initPolyfills();
-    },
-
-    testBrowser: function()
-    {
-        this.test.mediaqueries = $('html').hasClass('mediaqueries');
-        this.test.placeholder = $('html').hasClass('placeholder');
-    },
-
-    initPolyfills: function()
-    {
-        for (val in this.test) {
-            if (!this.test[val]) {
-                this.initPolyfill(val);
-            }
-        }
-    },
-
-    initPolyfill: function(polyfill)
-    {
-        switch (polyfill) {
-            case 'mediaqueries': this.initMediaQueries(); break;
-            case 'placeholder': this.initPlaceholder(); break;
-            default: break;
-        }
-    },
-
-    initMediaQueries: function()
-    {
-        yepnope([{
-            load: 'js/polyfills/media-queries.js'
-        }]);
-    },
-
-    initPlaceholder: function()
-    {
-        yepnope([{
-            load: 'js/polyfills/placeholder.js'
-        }]);
+        this.fixIframes();
     },
 
     fixIframes: function()
