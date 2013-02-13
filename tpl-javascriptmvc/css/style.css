@@ -118,17 +118,9 @@ button { width: auto; overflow: visible; }
 /* --------------------------------------------------
     GLOBAL */
 
-.form-item {
-    margin-bottom: 10px;
-}
-.form-item label {
-    display: inline-block;
-    margin-bottom: 4px;
-}
-
-.form-submit {
-    text-align: right;
-}
+.form-item { margin-bottom: 10px; }
+.form-item label { display: inline-block; margin-bottom: 4px; }
+.form-submit { text-align: right; }
 
 input[type="text"], input[type="password"], textarea, select { 
     width: 100%; 
@@ -162,7 +154,7 @@ input[type="submit"], input[type="button"], button {
 .hidden { display: none }
 .invisible { position: absolute; left: -9999px; top: -9999px; }
 
-.nobr { white-space: nowrap; }
+.nobr, .nowrap { white-space: nowrap; }
 
 .ib, .icon { display: -moz-inline-stack; display: inline-block; zoom: 1; *display: inline; _overflow: hidden; }
 .icon { vertical-align: middle; height: 18px; line-height: inherit; }
@@ -171,12 +163,21 @@ input[type="submit"], input[type="button"], button {
 .error-text { color: #c00; }
 .success-text { color: #0c0; }
 
+.t-center { text-align: center; }
+.t-left { text-align: left; }
+.t-right { text-align: right; }
+
+.f-none { float: none; }
+.f-left { float: left; }
+.f-right { float: right; }
+
 /* -------------------------------------------------------------------------------------------------
     @LAYOUT
 ------------------------------------------------------------------------------------------------- */
 
 html { height: 100%; }
 body { height: auto !important; height: 100%; min-height: 100%; position: relative; }
+
 .page-header {  }
 .page-main { padding-bottom: 120px; }
 .page-footer { position: absolute; bottom: 0; height: 100px; width: 100%; }
@@ -190,6 +191,14 @@ body { height: auto !important; height: 100%; min-height: 100%; position: relati
 .js-link { text-decoration: none; }
 .js-link span { display: inline; border-bottom: 1px dashed; }
 .js-link:hover span { border-color: transparent; }
+
+.info-link { text-decoration: none; cursor: help; }
+.info-link span { display: inline; border-bottom: 1px dotted; }
+.info-link:hover span { border-color: transparent; }
+
+.iconed-link { text-decoration: none; }
+.iconed-link span { text-decoration: underline; }
+.iconed-link:hover span { text-decoration: none; }
 
 /* --------------------------------------------------
     CHROMEFRAME FOR OLD BROWSERS */
