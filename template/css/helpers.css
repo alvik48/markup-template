@@ -1,0 +1,95 @@
+.clear:before, .clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+.clear {
+    *zoom: 1;
+}
+
+.hidden {
+    display: none
+}
+
+.outside {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.nobr, .nowrap {
+    white-space: nowrap;
+}
+
+.ib, .icon {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    _overflow: hidden;
+}
+
+.icon {
+    vertical-align: middle;
+    height: 18px;
+    line-height: inherit;
+}
+
+.mute-text {
+    color: #999;
+}
+
+.error-text {
+    color: #c00;
+}
+
+.success-text {
+    color: #0c0;
+}
+
+.js-link {
+    text-decoration: none;
+}
+
+.js-link span {
+    display: inline;
+    border-bottom: 1px dashed;
+}
+
+.js-link:hover span {
+    border-color: transparent;
+}
+
+.info-link {
+    text-decoration: none;
+    cursor: help;
+}
+
+.info-link span {
+    display: inline;
+    border-bottom: 1px dotted;
+}
+
+.info-link:hover span {
+    border-color: transparent;
+}
+
+.iconed-link {
+    text-decoration: none;
+}
+
+.iconed-link span {
+    text-decoration: underline;
+}
+
+.iconed-link:hover span {
+    text-decoration: none;
+}

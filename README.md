@@ -1,4 +1,4 @@
 markup-template
 ===============
 
-Clean powerful markup boilerplate
+Powerful markup template for client-side applications.
