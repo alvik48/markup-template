@@ -3,4 +3,4 @@
 /**
  * Global application services
  */
-angular.module('app.services', []);
+var services = angular.module('app.services', []);

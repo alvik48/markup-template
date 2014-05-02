@@ -3,4 +3,4 @@
 /**
  * Global application filters
  */
-angular.module('app.filters', []);
+var filters = angular.module('app.filters', []);

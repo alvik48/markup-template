@@ -7,3 +7,10 @@ var app = angular.module('app', [
     'app.directives',
     'app.controllers'
 ]);
+
+/**
+ * App routes
+ */
+app.config(function($routeProvider) {
+
+});

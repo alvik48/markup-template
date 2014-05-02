@@ -3,11 +3,11 @@
 /**
  * Global application controllers
  */
-angular.module('app.controllers', [])
+var controllers = angular.module('app.controllers', [])
 
 /**
  * FirstCtrl description
  */
-    .controller('FirstCtrl', function($scope) {
+controllers.controller('FirstCtrl', function($scope) {
 
-    });
+});
