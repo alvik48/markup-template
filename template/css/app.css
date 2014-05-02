@@ -1,0 +1,115 @@
+/* -------------------------------------------------------------------------------------------------
+    @LAYOUT
+------------------------------------------------------------------------------------------------- */
+
+html {
+    height: 100%;
+}
+
+body {
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.page-header {
+}
+
+.page-main {
+    padding-bottom: 120px;
+}
+
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.old-browser {
+    background: #ccc;
+    color: black;
+    padding: 10px;
+}
+
+.old-browser a {
+    color: #00c;
+}
+
+/* -------------------------------------------------------------------------------------------------
+    @HOMEPAGE
+------------------------------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------------------------------
+    @PRINT
+------------------------------------------------------------------------------------------------- */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

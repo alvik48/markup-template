@@ -1,0 +1,168 @@
+body {
+    font: 12px/18px arial, sans-serif;
+    color: #333;
+    *font-size: small;
+}
+
+select, input, textarea, button {
+    font: 99% sans-serif;
+}
+
+pre, code, kbd, samp {
+    font-family: monospace, sans-serif;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+small {
+    font-size: 85%;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+}
+
+td, td img {
+    vertical-align: top;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+pre {
+    padding: 15px;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+
+.ie7 img {
+    -ms-interpolation-mode: bicubic;
+}
+
+/* --------------------------------------------------
+    SELECTION */
+
+::-moz-selection {
+    background: #09f;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #09f;
+    color: #fff;
+    text-shadow: none;
+}
+
+/* --------------------------------------------------
+    LINKS */
+
+a:hover, a:active {
+    outline: none;
+}
+
+a, a:active, a:visited {
+    color: #09f;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:link {
+    -webkit-tap-highlight-color: #09f;
+}
+
+/* --------------------------------------------------
+    HEADERS */
+
+h1, .h1 {
+    font: 30px/36px arial, sans-serif;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+h2, .h2 {
+    font: 24px/30px arial, sans-serif;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+h3, .h3 {
+    font: 18px/24px arial, sans-serif;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+h4, .h4 {
+    font: 16px/22px arial, sans-serif;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h5, .h5 {
+    font: 14px/20px arial, sans-serif;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+h6, .h6 {
+    font: 12px/18px arial, sans-serif;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+/* --------------------------------------------------
+    ARTICLES */
+
+.text-content {
+}
+
+.text-content p {
+    margin-bottom: 18px;
+}
+
+.text-content ul {
+    margin-bottom: 18px;
+}
+
+.text-content ul li {
+}
+
+.text-content ol {
+    margin-bottom: 18px;
+}
+
+.text-content ol li {
+}
+
+.text-content table {
+    margin-bottom: 18px;
+}
+
+.text-content tr {
+}
+
+.text-content th {
+}
+
+.text-content td {
+}
+
+.text-content tr:hover td {
+}
